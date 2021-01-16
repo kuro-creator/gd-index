@@ -142,7 +142,7 @@ function html(current_drive_order = 0, model = {}) {
     window.current_drive_order = ${current_drive_order};
     window.UI = JSON.parse('${JSON.stringify(uiConfig)}');
   </script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kuro-creator/gd-index/css/mdui-style.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kuro-creator/gd-index/css/mdui-style-v2.css">
   <script src="https://cdn.jsdelivr.net/gh/jquery/jquery@3.2.1/dist/jquery.min.js"></script>
   <link href="https://cdn.jsdelivr.net/gh/jscdn/css@master/video-js/video-js.min.css" rel="stylesheet"/>
   <script src="https://cdn.jsdelivr.net/gh/jscdn/js@master/video-js/video-js.min.js"></script>
