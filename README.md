@@ -13,6 +13,17 @@ Menggabungkan [Cloudflare Workers](https://workers.cloudflare.com/) dan [Google 
 ## Pembaharuan
 * Tambah menu list project
 * Background keren
+* Thema
+
+## Tema
+| Themes    |         |         |         |        |          |
+|-----------|---------|---------|---------|--------|----------|
+| cerulean  | cosmo   | cyborg  | darkly  | flatly | journal  |
+| litera    | lumen   | lux     | materia | minty  | pulse    |
+| sandstone | simplex | sketchy | slate   | solar  | spacelab |
+| superhero | united  | yeti    | vapor   | morph  | quartz   |    
+| zephyr    |
+
 
 ## Cara Deploy
 Buka link di bawah ini :
