@@ -207,6 +207,8 @@ function nav(path) {
     }
 
     $('#nav').html(html);
+    mdui.mutation();
+    mdui.updateTextFields();
 }
 
 // Sleep Function to Retry API Calls
