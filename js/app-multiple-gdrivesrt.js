@@ -184,18 +184,18 @@ function nav(path) {
     <a class="nav-link" href="${UI.contact_link}" target="_blank">${UI.nav_link_4}</a>
   </li>${UI.show_logout_button ?'<li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>': ''}`;
 
-    var search_text = model.is_search_page ? (model.q || '') : '';
+   var search_text = model.is_search_page ? (model.q || '') : '';
     const isMobile = Os.isMobile;
     var search_bar = `
 </ul>
 <form class="d-flex" method="get" action="/${cur}:search">
 <input class="form-control me-2" name="q" type="search" placeholder="Search" aria-label="Search" value="${search_text}" required>
-<button class="btn ${UI.search_button_class}" onclick="if($('#search_bar').hasClass('mdui-textfield-expanded') && $('#search_bar_form>input').val()) $('#search_bar_form').submit();" type="submit">Search</button>
+<button class="btn ${UI.search_button_class}" onclick="if($('#search_bar_form>input').val()) $('#search_bar_form').submit();" type="submit">Search</button>
 </form>
 </div>
 </div>
 </nav>
-`;
+
 
 
 	// Personal or team
