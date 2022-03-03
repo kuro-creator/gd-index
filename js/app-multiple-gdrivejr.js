@@ -1,3 +1,4 @@
+// Redesigned by telegram.dog/TheFirstSpeedster at https://www.npmjs.com/package/@googledrive/index which was written by someone else, credits are given on Source Page.
 // v2.1.8
 // Initialize the page
 function init() {
@@ -184,7 +185,9 @@ function nav(path) {
     <a class="nav-link" href="${UI.contact_link}" target="_blank">${UI.nav_link_4}</a>
   </li>${UI.show_logout_button ?'<li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>': ''}`;
 
-   var search_text = model.is_search_page ? (model.q || '') : '';
+
+
+    var search_text = model.is_search_page ? (model.q || '') : '';
     const isMobile = Os.isMobile;
     var search_bar = `
 </ul>
@@ -195,18 +198,15 @@ function nav(path) {
 </div>
 </div>
 </nav>
+`;
 
+    // Personal or team
+    if (model.root_type < 2) {
+        // Show search box
+        html += search_bar;
+    }
 
-
-	// Personal or team
-	if (model.root_type < 2) {
-		// Show search box
-		html += search_bar;
-	}
-
-	$('#nav').html(html);
-	mdui.mutation();
-	mdui.updateTextFields();
+    $('#nav').html(html);
 }
 
 // Sleep Function to Retry API Calls
